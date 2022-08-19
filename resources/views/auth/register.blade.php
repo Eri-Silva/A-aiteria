@@ -8,21 +8,21 @@
 
     <form action="{{url('/register')}}" method="POST">
        @csrf
-       <div class="row mb-3">
-        <label for="email" class="label">Email</label>
-        <div class="col">
-            <input type="email" class="form-control" placeholder="Digite seu email" id="email" name="email">
-        </div>
-    </div>
-    <div class="row mb-3">
-        <label for="password" class="label">Senha</label>
-        <div class="col">
-            <input type="password" class="form-control" placeholder="Digite seu email" id="password" name="password">
-        </div>
-    </div>                    
-    <div class="row mb-3">
-        <div class="d-grid justify-content-end">
-            <button type="submit" class="btn btn-success btn-sm btn-block">Entrar</button>
+       
+       <form action="{{url('/calls')}}" method="POST">
+            @csrf
+            
+            <label for="name">Nome</label>
+            <input type="text" value="name" name="username" placeholder="Digite seu nome" >
+            <label for="email">E-mail</label>
+            <input type="email" value="email" name="email" placeholder="Digite seu e-mail">
+            <label for="password">Senha</label>
+            <input type="password" value="password" name="password" placeholder="Digite sua senha">
+
+            <div> 
+                <button> Enviar </button>
+            </div>
+
         </div>
     </div>
 </form>

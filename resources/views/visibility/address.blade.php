@@ -3,44 +3,38 @@
 <head>
 	<title>Endereço</title>
 </head>
-<body>
-    <h1>Forneça seu endereço</h1>
-    <form action="{{url('/datasheet')}}" method="POST">
-        @csrf
-        <div class="row m-3">
-            <label for="task" class="label">Nome Completo</label>
-            <div class="col">
-                <input class="form-control" type="text" name="task" id="task">
-            </div> 
-            <div class="row m-3">
-                <label for="task" class="label">Bairro</label>
-                <div class="col">
-                    <input class="form-control" type="text" name="task" id="task">
-                </div>  
-                <div class="row m-3">
-                    <label for="task" class="label">Rua ou Logradouro</label>
-                    <div class="col">
-                        <input class="form-control" type="text" name="task" id="task">
-                    </div>                                                      
-                </div>
-                <div class="row m-3">
-                    <label for="task" class="label">Número da Residência</label>
-                    <div class="col">
-                        <input class="form-control" type="text" name="task" id="task">
-                    </div> 
-                    <div class="row m-3">
-                        <label for="task" class="label">Celular</label>
-                        <div class="col">
-                            <input class="form-control" type="text" name="task" id="task">
-                        </div> 
-                        
-                        <div class="row m-3">
-                            <div class="d-grid justify-content-end">
-                                <button type="submit" class="btn btn-success btn-sm btn-block">Enviar</button>
-                            </div>
-                        </div> 
-                    </form>
 
-                    
-                </body>
-                </html>
+<body>
+	<h1>Forneça o local de entrega</h1>
+	<form action="{{url('/datasheet')}}" method="POST">
+		@csrf
+
+		<fieldset>
+			<div>
+				<label for="nome">Nome Completo</label>
+				<input type="text" id="nome" placeholder="Nome Completo" name="nome" value="nome" />
+				
+				<label for="fone">Telefone</label>
+				<input type="tel" id="fone" placeholder="(xx)xx-xx-xx-xx" name="fone"  value="fone" />
+
+				<label for="bairro">Bairro</label>
+				<input type="text" id="bairro" placeholder="Bairro" name="bairro"  value="bairro"/>
+				
+				<label for="rua">Rua</label>
+				<input type="text" id="rua" placeholder="Rua" name="rua"  value="rua" />
+				
+				<label for="numero">numero</label>
+				<input type="number" id="numero" placeholder="Numero" name="numero"  value="numero" />
+
+				<button>Enviar</button>
+				
+
+
+			</div>
+		</fieldset>  
+	</form>
+
+
+
+</body>
+</html>

@@ -15,9 +15,12 @@
 
 		<form action="{{url('/calls')}}" method="POST">
 			@csrf
-			<input type="text" name="username" placeholder="Digite seu nome" >
-			<input type="password" name="password" placeholder="Digite sua senha">
-			<input type="email" name="email" placeholder="Digite seu e-mail">
+			
+			<label for="email">E-mail</label>
+			<input type="email" value="email" name="email" placeholder="Digite seu e-mail">
+			<label for="password">Senha</label>
+			<input type="password" value="password" name="password" placeholder="Digite sua senha">
+
 			<div> 
 				<button> Enviar </button>
 			</div>
