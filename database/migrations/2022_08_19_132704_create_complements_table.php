@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('complements', function (Blueprint $table) {
             $table->id();
+            $table->string('complemento');
             $table->timestamps();
         });
     }

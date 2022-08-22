@@ -15,7 +15,9 @@ return new class extends Migration
     {
         Schema::create('flavors', function (Blueprint $table) {
             $table->id();
+            $table->string('sabor');
             $table->timestamps();
+
         });
     }
 

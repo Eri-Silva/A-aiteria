@@ -18,8 +18,9 @@ class CallFactory extends Factory
     {
         return [
         'tamanho' => fake()->tamanho(),
-        'sabor' => fake()->sabor(),
-        'complementos' => fake()->complementos(),
+        'flavor_id' => fake()->flavor_id(),
+        'complement_id' => fake()->complement_id(),
+        'status' => fake()->status()
             //
         ];
     }

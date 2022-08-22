@@ -15,5 +15,9 @@ class CallSeeder extends Seeder
     public function run()
     {
         //
+        \App\Models\User::factory()->create([
+            'name' => 'Maria de jesus',
+            'email' => 'mjsm.mdrs@example.com',
+        ]);
     }
 }

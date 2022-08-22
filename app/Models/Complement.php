@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Complement extends Model
 {
     use HasFactory;
+
+     protected $fillable = [
+         'id',
+         'complemento',
+        
+       
+    ];
+
 }

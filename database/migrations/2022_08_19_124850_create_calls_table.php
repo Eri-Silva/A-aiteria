@@ -18,6 +18,17 @@ return new class extends Migration
             $table->String('tamanho');
             $table->boolean('status');
             $table->timestamps();
+
+            $table->unsignedBigInteger('flavor_id');
+            $table->unsignedBigInteger('complement_id');
+
+            $table->foreign('flavor_id')
+                ->references('id')
+                ->on('flavors');
+
+            $table->foreign('complement_id')
+                ->references('id')
+                ->on('complements');
         });
     }
 

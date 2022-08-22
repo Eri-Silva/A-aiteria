@@ -15,5 +15,9 @@ class FlavorSeeder extends Seeder
     public function run()
     {
         //
+
+         \App\Models\Flavor::factory()->create([
+            'sabor' => 'Maria de jesus',
+        ]);
     }
 }
