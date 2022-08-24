@@ -41,11 +41,6 @@
             <input id="email_login" name="email_login"  type="password" placeholder="ex. senha" /> 
           </p>
            <!-- required="required" -->
-
-          <p> 
-            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
-            <label for="manterlogado">Manter-me logado</label>
-          </p>
            
           <p> 
             <input type="submit" value="Logar" /> 

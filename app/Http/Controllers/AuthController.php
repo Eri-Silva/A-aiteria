@@ -12,25 +12,38 @@ class AuthController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function index1()
+    // public function index()
+    // {
+    //     return view ('welcome');
+    //     //
+    // }
+//função para a rota de login e registro
+     public function register()
     {
-        return view ('welcome');
+        return view ('auth.register');
         //
     }
-
     //função para a rota de login e registro
-     public function index2(Request $request)
+     public function login()
     {
         return view ('auth.login');
         //
     } 
 
     //função para a rota de login e registro
-     public function index3(Request $request)
+     public function createRegister(Request $request)
     {
         return view ('auth.register');
         //
     }
+
+    public function authLogin(Request $request)
+    {
+        return view ('auth.login');
+        //
+    } 
+
+    
 
     /**
      * Show the form for creating a new resource.

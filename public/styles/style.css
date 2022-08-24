@@ -23,7 +23,7 @@ input {
   input[type="submit"]{
     width: 100%!important;
     cursor: pointer;  
-    background: rgb(61, 157, 179);
+    background: #501f50;
     padding: 8px 5px;
     color: #fff;
     font-size: 20px;  
@@ -39,7 +39,7 @@ input {
    
   /*estilo do botão submit no hover */
   input[type="submit"]:hover{
-    background: #4ab3c6;
+    background: #800080;
   }
 
   /* 77777777777*/
@@ -62,23 +62,24 @@ input {
  
 .link a {
   font-weight: bold;
-  background: #f7f8f1;
+  background: white;
   padding: 6px;
-  color: rgb(29, 162, 193);
+  color: 851d86;
   margin-left: 10px;
-  border: 1px solid #cbd518;
+  border: 1px solid #642764;
  
   -webkit-border-radius: 4px;
   border-radius: 4px;  
  
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s  linear;
+  text-decoration: none;
 }
  
 .link a:hover {
-  color: #39bfd7;
-  background: #f7f7f7;
-  border: 1px solid #4ab3c6;
+  color: white;
+  background: #851d86;
+  border: 1px solid white;
 }
 
 

@@ -22,16 +22,16 @@ use App\Http\Controllers\AuthController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 //rotas do login de clientes
-Route::get('/login', [AuthController::class, 'index1']);
-Route::post('/login', [AuthController::class, 'index2']);
+Route::get('/login', [AuthController::class, 'login']);
+Route::post('/login', [AuthController::class, 'authLogin']);
 
 //rotas do registro de clientes
-Route::get('/register', [AuthController::class, 'index1']);
-Route::post('/register', [AuthController::class, 'index3']);
+Route::get('/register', [AuthController::class, 'register']);
+Route::post('/register', [AuthController::class, 'createRegister']);
 
 //rotas da pasta visibility
 Route::get('/calls', [VisibilityController::class, 'index1']);
