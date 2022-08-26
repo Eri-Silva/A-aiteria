@@ -8,6 +8,7 @@
 	@section('content')
 </head>
 <body>
+@section('content_calls')
 	<h1>Monte seu açai</h1>
 	<form action="{{url('/address')}}" method="POST">
 		@csrf
@@ -53,6 +54,8 @@
 
 
 	<h1>Veja seus pedidos em andamento</h1>
+
+	@endsection
 
 
 </body>

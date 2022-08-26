@@ -38,21 +38,29 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">START PAGE</h1>
+  <h1 class="w3-margin w3-jumbo">LEME açaiteria</h1>
   <!-- <p class="w3-xlarge">Template by w3.css</p> -->
   <!-- <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button> -->
 </header>
+
+@yield('content_calls')
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h1>Melhor açai da cidade</h1>
+      <h5 class="w3-padding-32">Venha fazer uma visita</h5>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="w3-text-grey">Está pensando em tomar aquele delicioso açaí? 
+        Então passa no (Nome da loja). E confira a melhor qualidade e 
+        o menor preço da cidade! Desfrute da nossa variedade em adicionais, 
+        e agora com uma super novidade pra você açaizeiro de plantão. 
+        Todo dia tem um açaí com desconto especial. 
+        É isso mesmo! Todo dia o seu açaí preferido ainda 
+        mais barato.Estamos localizados na (Nome da rua) 
+        numero (00).Funcionamos de terça a domingo das 17 às 22 horas. 
+        Informações pelo Whatsapp: 0 0000 0000.</p>
     </div>
 
     <div class="w3-third w3-center">
@@ -69,18 +77,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
 
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h1>Dinheiro não compra felicidade, mas compra açaí</h1>
+      <h5 class="w3-padding-32">Não deixe para depois o Açaí que você 
+        pode comer agora</h5>
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="w3-text-grey">Aqui na (Nome da loja) tem promoção todo 
+        dia! Peça pelo Whatsapp: 0 0000 0000. Funcionamos todos os
+         dias, das 18 horas à meia noite. Lanches, sorvetes, açaí 
+         e geladinho gourmet. Venha você também para (Nome da Loja).
+          Peça pelo Whatsapp: 0 0000 0000. (Nome da loja), localizada 
+          na (Nome da rua) numero (00) em sua cidade.</p>
     </div>
   </div>
 </div>
 
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+    <h1 class="w3-margin w3-xlarge">Faça seu pedido e se delicie com nosso açai</h1>
 </div>
 
 <!-- Footer -->
@@ -93,7 +105,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
  </div>
- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 <script>

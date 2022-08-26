@@ -32,8 +32,8 @@
         	@csrf
           <h1>Login</h1> 
           <p> 
-            <label for="nome_login">Seu nome</label>
-            <input id="nome_login" name="nome_login" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+            <label for="name_login">Seu nome</label>
+            <input id="name_login" name="name_login" type="text" placeholder="ex. contato@htmlecsspro.com"/>
           </p>
            
           <p> 
@@ -48,7 +48,7 @@
            
           <p class="link">
             Ainda não tem conta?
-            <a href="/">Cadastre-se</a>
+            <a href="{{url('/register')}}">Cadastre-se</a>
           </p>
         </form>
       </div>

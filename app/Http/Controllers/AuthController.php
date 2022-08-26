@@ -33,13 +33,13 @@ class AuthController extends Controller
     //função para a rota de login e registro
      public function createRegister(Request $request)
     {
-        return view ('auth.register');
+        return view ('visibility.calls');
         //
     }
 
     public function authLogin(Request $request)
     {
-        return view ('auth.login');
+        return view ('visibility.calls');
         //
     } 
 
